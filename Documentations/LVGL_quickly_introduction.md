@@ -242,13 +242,13 @@ to find and read more information
 *  https://docs.lvgl.io/8.0/get-started/index.html
 *  https://docs.lvgl.io/8.0/porting/index.html
 
-to read a quick overview [here](Documentaions/LVGL_quick_overview.md)
+to read a quick overview [here](LVGL_quick_overview.md)
 
-to read more about styles [here](Documentations/LVGL_styles.md)
+to read more about styles [here](LVGL_styles.md)
 
-to read more about events , input device and displays [here](Documentations/LVGL_events_indev_disp.md)
+to read more about events , input device and displays [here](LVGL_events_indev_disp.md)
 
-to read more about layers , fonts , colors and image [here](Documentations/LVGL_layers_fonts_colors_images.md)
+to read more about layers , fonts , colors and image [here](LVGL_layers_fonts_colors_images.md)
 
-to read more about file system, timers and animation [here](Documentations/LVGL_animations_timer_filesystem.md)
+to read more about file system, timers and animation [here](LVGL_animations_timer_filesystem.md)
 
