@@ -30,7 +30,7 @@ int main(int argc,char **argv) {
 	hal_init();
 
 	// routine to call lvgl get started example 1
-	lv_example_get_started_2();
+	lv_example_get_started_3();
 
 
 	while(1){

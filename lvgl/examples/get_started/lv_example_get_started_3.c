@@ -9,7 +9,6 @@ static void slider_event_cb(lv_event_t * e)
 
     /*Refresh the text*/
     lv_label_set_text_fmt(label, "%d", lv_slider_get_value(slider));
-    lv_obj_align_to(label, slider, LV_ALIGN_OUT_TOP_MID, 0, -15);    /*Align top of the slider*/
 }
 
 /**
