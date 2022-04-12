@@ -30,9 +30,8 @@ int main(int argc,char **argv) {
 	hal_init();
 
 	// routine to call lvgl get started example 1
-	lv_example_get_started_1();
+	lv_example_get_started_2();
 
-	screenExample();
 
 	while(1){
 		/* Periodically call the lv_task handler.

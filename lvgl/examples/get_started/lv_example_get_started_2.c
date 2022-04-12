@@ -59,7 +59,7 @@ void lv_example_get_started_2(void)
     lv_obj_set_size(btn, 120, 50);
     lv_obj_add_style(btn, &style_btn, 0);
     lv_obj_add_style(btn, &style_btn_pressed, LV_STATE_PRESSED);
-
+    lv_obj_center(btn);
     /*Add a label to the button*/
     lv_obj_t * label = lv_label_create(btn);
     lv_label_set_text(label, "Button");
@@ -74,6 +74,7 @@ void lv_example_get_started_2(void)
     lv_obj_add_style(btn2, &style_btn_red, 0);
     lv_obj_add_style(btn2, &style_btn_pressed, LV_STATE_PRESSED);
     lv_obj_set_style_radius(btn2, LV_RADIUS_CIRCLE, 0); /*Add a local style too*/
+    lv_obj_align(btn2, LV_ALIGN_CENTER,0,lv_obj_get_height(btn)+40);
 
     label = lv_label_create(btn2);
     lv_label_set_text(label, "Button 2");
