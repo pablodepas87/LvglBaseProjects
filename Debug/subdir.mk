@@ -4,12 +4,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../baseExample1.c \
 ../main.c 
 
 C_DEPS += \
+./baseExample1.d \
 ./main.d 
 
 OBJS += \
+./baseExample1.o \
 ./main.o 
 
 
@@ -25,7 +28,7 @@ OBJS += \
 clean: clean--2e-
 
 clean--2e-:
-	-$(RM) ./main.d ./main.o
+	-$(RM) ./baseExample1.d ./baseExample1.o ./main.d ./main.o
 
 .PHONY: clean--2e-
 

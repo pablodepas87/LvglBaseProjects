@@ -14,6 +14,7 @@ OBJS :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 assets \
+. \
 lv_drivers/display \
 lv_drivers/gtkdrv \
 lv_drivers/indev \
@@ -95,5 +96,4 @@ lvgl/tests \
 lvgl/tests/lv_test_core \
 lvgl/tests/lv_test_fonts \
 lvgl/tests/lv_test_widgets \
-. \
 

@@ -29,8 +29,10 @@ int main(int argc,char **argv) {
 	/*Initialize the HAL (display, input devices, tick) for LVGL*/
 	hal_init();
 
+	// routine to call lvgl get started example 1
 	lv_example_get_started_1();
 
+	screenExample();
 
 	while(1){
 		/* Periodically call the lv_task handler.
@@ -119,9 +121,9 @@ static void hal_init(void){
 
 
 	 /*Set a cursor for the mouse is OPTIONAL*/
-	 LV_IMG_DECLARE(mouse_cursor_icon); 						/*Declare the image file.*/
-	 lv_obj_t * cursor_obj = lv_img_create(lv_scr_act()); 		/*Create an image object for the cursor */
-	 lv_img_set_src(cursor_obj, &mouse_cursor_icon);           	/*Set the image source*/
-	 lv_indev_set_cursor(mouse_indev, cursor_obj);             	/*Connect the image  object to the driver*/
+//	 LV_IMG_DECLARE(mouse_cursor_icon); 						/*Declare the image file.*/
+//	 lv_obj_t * cursor_obj = lv_img_create(lv_scr_act()); 		/*Create an image object for the cursor */
+//	 lv_img_set_src(cursor_obj, &mouse_cursor_icon);           	/*Set the image source*/
+//	 lv_indev_set_cursor(mouse_indev, cursor_obj);             	/*Connect the image  object to the driver*/
 
 }
