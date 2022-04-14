@@ -133,7 +133,17 @@ main.o: ../main.c ../lvgl/lvgl.h ../lvgl/src/misc/lv_log.h \
  ../lvgl/src/extra/themes/basic/lv_theme_basic.h \
  ../lvgl/src/extra/themes/basic/../../../core/lv_obj.h \
  ../lv_drivers/sdl/sdl.h ../lv_drivers/sdl/../../lv_drv_conf.h \
- ../lv_drivers/sdl/../../lv_conf.h ../lv_drivers/sdl/../../lvgl/lvgl.h
+ ../lv_drivers/sdl/../../lv_conf.h ../lv_drivers/sdl/../../lvgl/lvgl.h \
+ ../lvgl/examples/lv_examples.h ../lvgl/examples/../lvgl.h \
+ ../lvgl/examples/styles/lv_example_style.h \
+ ../lvgl/examples/get_started/lv_example_get_started.h \
+ ../lvgl/examples/widgets/lv_example_widgets.h \
+ ../lvgl/examples/layouts/lv_example_layout.h \
+ ../lvgl/examples/layouts/flex/lv_example_flex.h \
+ ../lvgl/examples/layouts/grid/lv_example_grid.h \
+ ../lvgl/examples/scroll/lv_example_scroll.h \
+ ../lvgl/examples/anim/lv_example_anim.h \
+ ../lvgl/examples/event/lv_example_event.h
 
 ../lvgl/lvgl.h:
 
@@ -502,3 +512,25 @@ main.o: ../main.c ../lvgl/lvgl.h ../lvgl/src/misc/lv_log.h \
 ../lv_drivers/sdl/../../lv_conf.h:
 
 ../lv_drivers/sdl/../../lvgl/lvgl.h:
+
+../lvgl/examples/lv_examples.h:
+
+../lvgl/examples/../lvgl.h:
+
+../lvgl/examples/styles/lv_example_style.h:
+
+../lvgl/examples/get_started/lv_example_get_started.h:
+
+../lvgl/examples/widgets/lv_example_widgets.h:
+
+../lvgl/examples/layouts/lv_example_layout.h:
+
+../lvgl/examples/layouts/flex/lv_example_flex.h:
+
+../lvgl/examples/layouts/grid/lv_example_grid.h:
+
+../lvgl/examples/scroll/lv_example_scroll.h:
+
+../lvgl/examples/anim/lv_example_anim.h:
+
+../lvgl/examples/event/lv_example_event.h:

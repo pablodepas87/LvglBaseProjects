@@ -23,7 +23,7 @@ void lv_example_style_2(void)
     /*Create an object with the new style*/
     lv_obj_t * obj = lv_obj_create(lv_scr_act());
     lv_obj_add_style(obj, &style, 0);
-    lv_obj_center(obj);
+    lv_obj_align(obj, LV_ALIGN_RIGHT_MID, -85, 0);
 }
 
 #endif
