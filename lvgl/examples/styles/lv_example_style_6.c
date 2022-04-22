@@ -27,7 +27,7 @@ void lv_example_style_6(void)
     LV_IMG_DECLARE(img_cogwheel_argb);
     lv_img_set_src(obj, &img_cogwheel_argb);
 
-    lv_obj_center(obj);
+    lv_obj_align(obj, LV_ALIGN_RIGHT_MID, -35, -15);
 }
 
 #endif
