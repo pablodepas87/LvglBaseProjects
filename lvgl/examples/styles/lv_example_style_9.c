@@ -20,7 +20,7 @@ void lv_example_style_9(void)
     static lv_point_t p[] = {{10, 30}, {30, 50}, {100, 0}};
     lv_line_set_points(obj, p, 3);
 
-    lv_obj_center(obj);
+    lv_obj_align(obj, LV_ALIGN_RIGHT_MID, -20, 0);
 }
 
 #endif
