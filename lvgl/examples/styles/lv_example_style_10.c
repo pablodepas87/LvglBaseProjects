@@ -34,7 +34,8 @@ void lv_example_style_10(void)
     lv_obj_add_style(obj, &style_def, 0);
     lv_obj_add_style(obj, &style_pr, LV_STATE_PRESSED);
 
-    lv_obj_center(obj);
+    lv_obj_align(obj, LV_ALIGN_LEFT_MID, 10, 0);
+
 }
 
 #endif

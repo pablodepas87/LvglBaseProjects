@@ -18,7 +18,7 @@ void lv_example_style_12(void)
     /*Overwrite the background color locally*/
     lv_obj_set_style_bg_color(obj,lv_palette_main(LV_PALETTE_ORANGE), LV_PART_MAIN);
 
-    lv_obj_center(obj);
+    lv_obj_align(obj,LV_ALIGN_RIGHT_MID	, 0, -10);
 }
 
 #endif

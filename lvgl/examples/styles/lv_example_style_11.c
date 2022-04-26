@@ -30,7 +30,7 @@ void lv_example_style_11(void)
     /*Create an object with the base style only*/
     lv_obj_t * obj_base = lv_obj_create(lv_scr_act());
     lv_obj_add_style(obj_base, &style_base, 0);
-    lv_obj_align(obj_base, LV_ALIGN_LEFT_MID, 20, 0);
+    lv_obj_align(obj_base, LV_ALIGN_TOP_MID, 0, 20);
 
     lv_obj_t * label = lv_label_create(obj_base);
     lv_label_set_text(label, "Base");
@@ -40,7 +40,7 @@ void lv_example_style_11(void)
     lv_obj_t * obj_warning = lv_obj_create(lv_scr_act());
     lv_obj_add_style(obj_warning, &style_base, 0);
     lv_obj_add_style(obj_warning, &style_warning, 0);
-    lv_obj_align(obj_warning, LV_ALIGN_RIGHT_MID, -20, 0);
+    lv_obj_align(obj_warning, LV_ALIGN_BOTTOM_MID, 0, -20);
 
     label = lv_label_create(obj_warning);
     lv_label_set_text(label, "Warning");
