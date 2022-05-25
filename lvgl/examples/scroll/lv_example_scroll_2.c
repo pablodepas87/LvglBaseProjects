@@ -20,10 +20,10 @@ static void sw_event_cb(lv_event_t * e)
 void lv_example_scroll_2(void)
 {
     lv_obj_t * panel = lv_obj_create(lv_scr_act());
-    lv_obj_set_size(panel, 280, 120);
+    lv_obj_set_size(panel, 240, 120);
     lv_obj_set_scroll_snap_x(panel, LV_SCROLL_SNAP_CENTER);
     lv_obj_set_flex_flow(panel, LV_FLEX_FLOW_ROW);
-    lv_obj_align(panel, LV_ALIGN_CENTER, 0, 20);
+    lv_obj_align(panel, LV_ALIGN_RIGHT_MID, -5, 0);
 
     uint32_t i;
     for(i = 0; i < 10; i++) {
