@@ -8,8 +8,8 @@
 void lv_example_scroll_4(void)
 {
     lv_obj_t * obj = lv_obj_create(lv_scr_act());
-    lv_obj_set_size(obj, 200, 100);
-    lv_obj_center(obj);
+    lv_obj_set_size(obj, 230, 100);
+    lv_obj_align(obj, LV_ALIGN_RIGHT_MID, -5, 0);
 
     lv_obj_t * label = lv_label_create(obj);
     lv_label_set_text(label,

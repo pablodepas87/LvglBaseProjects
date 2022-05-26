@@ -27,8 +27,8 @@ static void float_btn_event_cb(lv_event_t * e)
 void lv_example_scroll_3(void)
 {
     lv_obj_t * list = lv_list_create(lv_scr_act());
-    lv_obj_set_size(list, 280, 220);
-    lv_obj_center(list);
+    lv_obj_set_size(list, 230, 220);
+    lv_obj_align(list, LV_ALIGN_LEFT_MID, 5, 0);
 
     for(btn_cnt = 1; btn_cnt <= 2; btn_cnt++) {
         char buf[32];
