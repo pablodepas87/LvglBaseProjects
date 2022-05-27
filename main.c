@@ -14,6 +14,7 @@
 #include <SDL2/SDL.h>
 #include "lvgl/lvgl.h"
 #include "lv_drivers/sdl/sdl.h"
+#include "lvgl/examples/lv_examples.h"
 
 static void hal_init(void);
 
@@ -28,18 +29,7 @@ int main(int argc,char **argv) {
 	/*Initialize the HAL (display, input devices, tick) for LVGL*/
 	hal_init();
 
-	/* create a style to apply at label*/
-	static lv_style_t lbl_style;
-	lv_style_init(&lbl_style);
-	lv_style_set_text_color(&lbl_style, lv_palette_main(LV_PALETTE_GREY));
-	lv_style_set_text_font(&lbl_style, &lv_font_montserrat_20);
-
-	/* create a label obj widget */
-	lv_obj_t *lbl_helloworld = lv_label_create(lv_scr_act());
-	lv_obj_set_align(lbl_helloworld, LV_ALIGN_CENTER);
-	lv_label_set_text(lbl_helloworld, "HELLO WORLD");
-	lv_obj_add_style(lbl_helloworld, &lbl_style, 0);
-
+	lv_example_anim_2();
 
 	while(1){
 		/* Periodically call the lv_task handler.
@@ -128,9 +118,9 @@ static void hal_init(void){
 
 
 	 /*Set a cursor for the mouse is OPTIONAL*/
-	 LV_IMG_DECLARE(mouse_cursor_icon); 						/*Declare the image file.*/
-	 lv_obj_t * cursor_obj = lv_img_create(lv_scr_act()); 		/*Create an image object for the cursor */
-	 lv_img_set_src(cursor_obj, &mouse_cursor_icon);           	/*Set the image source*/
-	 lv_indev_set_cursor(mouse_indev, cursor_obj);             	/*Connect the image  object to the driver*/
+//	 LV_IMG_DECLARE(mouse_cursor_icon); 						/*Declare the image file.*/
+//	 lv_obj_t * cursor_obj = lv_img_create(lv_scr_act()); 		/*Create an image object for the cursor */
+//	 lv_img_set_src(cursor_obj, &mouse_cursor_icon);           	/*Set the image source*/
+//	 lv_indev_set_cursor(mouse_indev, cursor_obj);             	/*Connect the image  object to the driver*/
 
 }
