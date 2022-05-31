@@ -13,9 +13,11 @@ void lv_example_flex_2(void)
     lv_style_set_layout(&style, LV_LAYOUT_FLEX);
 
     lv_obj_t * cont = lv_obj_create(lv_scr_act());
-    lv_obj_set_size(cont, 300, 220);
-    lv_obj_center(cont);
+    lv_obj_set_size(cont, 300, 170);
+    lv_obj_align(cont, LV_ALIGN_BOTTOM_MID, 0, -15);
     lv_obj_add_style(cont, &style, 0);
+
+
 
     uint32_t i;
     for(i = 0; i < 8; i++) {
