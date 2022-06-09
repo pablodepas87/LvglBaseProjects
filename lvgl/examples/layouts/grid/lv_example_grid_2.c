@@ -13,8 +13,8 @@ void lv_example_grid_2(void)
     /*Create a container with grid*/
     lv_obj_t * cont = lv_obj_create(lv_scr_act());
     lv_obj_set_grid_dsc_array(cont, col_dsc, row_dsc);
-    lv_obj_set_size(cont, 300, 220);
-    lv_obj_center(cont);
+    lv_obj_set_size(cont, 300, 130);
+    lv_obj_align(cont, LV_ALIGN_BOTTOM_MID, 0, -5);
 
     lv_obj_t * label;
     lv_obj_t * obj;
