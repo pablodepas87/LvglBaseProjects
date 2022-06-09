@@ -17,8 +17,8 @@ static void column_gap_anim(void * obj, int32_t v)
 void lv_example_flex_5(void)
 {
     lv_obj_t * cont = lv_obj_create(lv_scr_act());
-    lv_obj_set_size(cont, 300, 220);
-    lv_obj_center(cont);
+    lv_obj_set_size(cont, 250, 150);
+    lv_obj_align(cont, LV_ALIGN_TOP_MID, 0, 5);
     lv_obj_set_flex_flow(cont, LV_FLEX_FLOW_ROW_WRAP);
 
     uint32_t i;

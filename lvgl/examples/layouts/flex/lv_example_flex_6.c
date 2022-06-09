@@ -9,8 +9,8 @@ void lv_example_flex_6(void)
 {
     lv_obj_t * cont = lv_obj_create(lv_scr_act());
     lv_obj_set_style_base_dir(cont, LV_BASE_DIR_RTL, 0);
-    lv_obj_set_size(cont, 300, 220);
-    lv_obj_center(cont);
+    lv_obj_set_size(cont, 350, 150);
+    lv_obj_align(cont, LV_ALIGN_BOTTOM_MID, 0, -10);
     lv_obj_set_flex_flow(cont, LV_FLEX_FLOW_ROW_WRAP);
 
     uint32_t i;
