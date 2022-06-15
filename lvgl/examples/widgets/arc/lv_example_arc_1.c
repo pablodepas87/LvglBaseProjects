@@ -10,7 +10,7 @@ void lv_example_arc_1(void)
   lv_arc_set_rotation(arc, 135);
   lv_arc_set_bg_angles(arc, 0, 270);
   lv_arc_set_value(arc, 40);
-  lv_obj_center(arc);
+  lv_obj_align(arc, LV_ALIGN_BOTTOM_MID, 0, 5);
 }
 
 #endif
