@@ -19,7 +19,7 @@ void lv_example_chart_3(void)
     lv_obj_t * chart;
     chart = lv_chart_create(lv_scr_act());
     lv_obj_set_size(chart, 200, 150);
-    lv_obj_center(chart);
+    lv_obj_align(chart, LV_ALIGN_BOTTOM_MID, 0, -10);
     lv_chart_set_type(chart, LV_CHART_TYPE_BAR);
     lv_chart_set_range(chart, LV_CHART_AXIS_PRIMARY_Y, 0, 100);
     lv_chart_set_range(chart, LV_CHART_AXIS_SECONDARY_Y, 0, 400);
