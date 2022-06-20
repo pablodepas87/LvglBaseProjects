@@ -26,8 +26,8 @@ void lv_example_bar_2(void)
     lv_obj_add_style(bar, &style_bg, 0);
     lv_obj_add_style(bar, &style_indic, LV_PART_INDICATOR);
 
-    lv_obj_set_size(bar, 200, 20);
-    lv_obj_center(bar);
+    lv_obj_set_size(bar, 20, 200);
+    lv_obj_align(bar, LV_ALIGN_LEFT_MID, 50, 0);
     lv_bar_set_value(bar, 100, LV_ANIM_ON);
 }
 

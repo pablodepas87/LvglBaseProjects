@@ -25,20 +25,20 @@ static void event_cb(lv_event_t * e)
 
     lv_area_t txt_area;
     /*If the indicator is long enough put the text inside on the right*/
-    if(lv_area_get_width(dsc->draw_area) > txt_size.x + 20) {
-        txt_area.x2 = dsc->draw_area->x2 - 5;
-        txt_area.x1 = txt_area.x2 - txt_size.x + 1;
+    if(lv_area_get_height(dsc->draw_area) > txt_size.y + 20) {
+        txt_area.y2 = dsc->draw_area->y2 - 5;
+        txt_area.y1 = txt_area.y2 - txt_size.y + 1;
         label_dsc.color = lv_color_white();
     }
     /*If the indicator is still short put the text out of it on the right*/
     else {
-        txt_area.x1 = dsc->draw_area->x2 + 5;
-        txt_area.x2 = txt_area.x1 + txt_size.x - 1;
+        txt_area.y1 = dsc->draw_area->y2 + 5;
+        txt_area.y2 = txt_area.y1 + txt_size.y - 1;
         label_dsc.color = lv_color_black();
     }
 
-    txt_area.y1 = dsc->draw_area->y1 + (lv_area_get_height(dsc->draw_area) - txt_size.y) / 2;
-    txt_area.y2 = txt_area.y1 + txt_size.y - 1;
+    txt_area.x1 = dsc->draw_area->x1 + (lv_area_get_width(dsc->draw_area) - txt_size.x) / 2;
+    txt_area.x2 = txt_area.x1 + txt_size.x - 1;
 
     lv_draw_label(&txt_area, dsc->clip_area, &label_dsc, buf, NULL);
 }
@@ -50,8 +50,8 @@ void lv_example_bar_6(void)
 {
     lv_obj_t * bar = lv_bar_create(lv_scr_act());
     lv_obj_add_event_cb(bar, event_cb, LV_EVENT_DRAW_PART_END, NULL);
-    lv_obj_set_size(bar, 200, 20);
-    lv_obj_center(bar);
+    lv_obj_set_size(bar, 20, 200);
+    lv_obj_align(bar, LV_ALIGN_RIGHT_MID, -60 , 0);
 
     lv_anim_t a;
     lv_anim_init(&a);

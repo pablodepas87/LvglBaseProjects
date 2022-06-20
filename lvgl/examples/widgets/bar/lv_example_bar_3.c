@@ -22,7 +22,7 @@ void lv_example_bar_3(void)
     lv_obj_t * bar = lv_bar_create(lv_scr_act());
     lv_obj_add_style(bar, &style_indic, LV_PART_INDICATOR);
     lv_obj_set_size(bar, 20, 200);
-    lv_obj_center(bar);
+    lv_obj_align(bar, LV_ALIGN_RIGHT_MID, -30 , 0);
     lv_bar_set_range(bar, -20, 40);
 
     lv_anim_t a;
