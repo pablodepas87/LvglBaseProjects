@@ -15,15 +15,15 @@ static void set_value(void * indic, int32_t v)
 void lv_example_meter_2(void)
 {
     meter = lv_meter_create(lv_scr_act());
-    lv_obj_center(meter);
-    lv_obj_set_size(meter, 200, 200);
+    lv_obj_align(meter, LV_ALIGN_TOP_RIGHT, -5, 10);
+    lv_obj_set_size(meter, 150, 150);
 
     /*Remove the circle from the middle*/
     lv_obj_remove_style(meter, NULL, LV_PART_INDICATOR);
 
     /*Add a scale first*/
     lv_meter_scale_t * scale = lv_meter_add_scale(meter);
-    lv_meter_set_scale_ticks(meter, scale, 11, 2, 10, lv_palette_main(LV_PALETTE_GREY));
+    lv_meter_set_scale_ticks(meter, scale, 5, 2, 10, lv_palette_main(LV_PALETTE_GREY));
     lv_meter_set_scale_major_ticks(meter, scale, 1, 2, 30, lv_color_hex3(0xeee), 10);
     lv_meter_set_scale_range(meter, scale, 0, 100, 270, 90);
 
