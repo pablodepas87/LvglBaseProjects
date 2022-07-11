@@ -77,7 +77,7 @@ void lv_example_table_2(void)
         lv_table_set_cell_value_fmt(table, i, 0, "Item %d", i + 1);
     }
 
-    lv_obj_align(table, LV_ALIGN_CENTER, 0, -20);
+    lv_obj_align(table, LV_ALIGN_RIGHT_MID, -10, 0);
 
     /*Add an event callback to to apply some custom drawing*/
     lv_obj_add_event_cb(table, draw_event_cb, LV_EVENT_DRAW_PART_END, NULL);
