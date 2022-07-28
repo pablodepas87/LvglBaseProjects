@@ -12,7 +12,8 @@ void lv_example_slider_3(void)
     /*Create a slider in the center of the display*/
     lv_obj_t * slider;
     slider = lv_slider_create(lv_scr_act());
-    lv_obj_center(slider);
+
+    lv_obj_align(slider, LV_ALIGN_BOTTOM_MID,0, -50);
 
     lv_slider_set_mode(slider, LV_SLIDER_MODE_RANGE);
     lv_slider_set_value(slider, 70, LV_ANIM_OFF);
